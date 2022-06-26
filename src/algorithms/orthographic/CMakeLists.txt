@@ -1,0 +1,2 @@
+# Specify the sources of this algorithm
+target_sources(orthosfm-algorithms PUBLIC OrthographicCamera.h OrthographicCamera.cpp OrthographicReprojectionError.h OrthographicReconstructionAlgorithm.h OrthographicReconstructionAlgorithm.cpp)

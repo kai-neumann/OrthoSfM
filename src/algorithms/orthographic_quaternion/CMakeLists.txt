@@ -1,0 +1,2 @@
+# Specify the sources of this algorithm
+target_sources(orthosfm-algorithms PUBLIC OrthographicQuaternionReprojectorError.h OrthoQuaternionCamera.h OrthoQuaternionCamera.cpp OrthoQuaternionRecoAlgorithm.h OrthoQuaternionRecoAlgorithm.cpp)
