@@ -401,7 +401,7 @@ void orthosfm::runFullPipelineTests(const std::string& datasetFolder, const std:
     std::vector<std::string> imageDatasetNames;
     //imageDatasetNames.emplace_back("Suzanne_GroupOfThree");
 
-    /*imageDatasetNames.emplace_back("Suzanne_Circle");
+    imageDatasetNames.emplace_back("Suzanne_Circle");
     imageDatasetNames.emplace_back("Suzanne_3Lat");
     imageDatasetNames.emplace_back("Suzanne_3Lat_rotated");
     imageDatasetNames.emplace_back("Rings_Circle");
@@ -409,7 +409,7 @@ void orthosfm::runFullPipelineTests(const std::string& datasetFolder, const std:
     imageDatasetNames.emplace_back("Rings_3Lat_rotated");
     imageDatasetNames.emplace_back("Dragon_Circle");
     imageDatasetNames.emplace_back("Dragon_3Lat");
-    imageDatasetNames.emplace_back("Dragon_3Lat_rotated");*/
+    imageDatasetNames.emplace_back("Dragon_3Lat_rotated");
 
     /*imageDatasetNames.emplace_back("01_Dragon_horizontal");
     imageDatasetNames.emplace_back("02_Dragon_vertical");
@@ -422,25 +422,25 @@ void orthosfm::runFullPipelineTests(const std::string& datasetFolder, const std:
     imageDatasetNames.emplace_back("09_Rings_rotated");*/
 
     // Real datasets
-    imageDatasetNames.emplace_back("Elephant");
-    imageDatasetNames.emplace_back("Valdivia");
+    //imageDatasetNames.emplace_back("Elephant");
+    //imageDatasetNames.emplace_back("Valdivia");
 
     std::vector<std::vector<SFM_SOLVER_TYPE>> supportedSolvers;
     //supportedSolvers.push_back(std::vector<SFM_SOLVER_TYPE>{SFM_SOLVER_TYPE::ORTHO_EULER_HORIZONTAL, SFM_SOLVER_TYPE::ORTHO_EULER_HORIZONTAL_VERTICAL, SFM_SOLVER_TYPE::ORTHO_EULER_ALL_DOF, SFM_SOLVER_TYPE::ORTHO_QUATERNION});
 
-    /*supportedSolvers.push_back(std::vector<SFM_SOLVER_TYPE>{SFM_SOLVER_TYPE::ORTHO_EULER_HORIZONTAL, SFM_SOLVER_TYPE::ORTHO_EULER_HORIZONTAL_VERTICAL, SFM_SOLVER_TYPE::ORTHO_EULER_ALL_DOF, SFM_SOLVER_TYPE::ORTHO_QUATERNION});
-    supportedSolvers.push_back(std::vector<SFM_SOLVER_TYPE>{SFM_SOLVER_TYPE::ORTHO_EULER_HORIZONTAL_VERTICAL, SFM_SOLVER_TYPE::ORTHO_EULER_ALL_DOF, SFM_SOLVER_TYPE::ORTHO_QUATERNION});
-    supportedSolvers.push_back(std::vector<SFM_SOLVER_TYPE>{SFM_SOLVER_TYPE::ORTHO_EULER_ALL_DOF, SFM_SOLVER_TYPE::ORTHO_QUATERNION});
     supportedSolvers.push_back(std::vector<SFM_SOLVER_TYPE>{SFM_SOLVER_TYPE::ORTHO_EULER_HORIZONTAL, SFM_SOLVER_TYPE::ORTHO_EULER_HORIZONTAL_VERTICAL, SFM_SOLVER_TYPE::ORTHO_EULER_ALL_DOF, SFM_SOLVER_TYPE::ORTHO_QUATERNION});
     supportedSolvers.push_back(std::vector<SFM_SOLVER_TYPE>{SFM_SOLVER_TYPE::ORTHO_EULER_HORIZONTAL_VERTICAL, SFM_SOLVER_TYPE::ORTHO_EULER_ALL_DOF, SFM_SOLVER_TYPE::ORTHO_QUATERNION});
     supportedSolvers.push_back(std::vector<SFM_SOLVER_TYPE>{SFM_SOLVER_TYPE::ORTHO_EULER_ALL_DOF, SFM_SOLVER_TYPE::ORTHO_QUATERNION});
     supportedSolvers.push_back(std::vector<SFM_SOLVER_TYPE>{SFM_SOLVER_TYPE::ORTHO_EULER_HORIZONTAL, SFM_SOLVER_TYPE::ORTHO_EULER_HORIZONTAL_VERTICAL, SFM_SOLVER_TYPE::ORTHO_EULER_ALL_DOF, SFM_SOLVER_TYPE::ORTHO_QUATERNION});
     supportedSolvers.push_back(std::vector<SFM_SOLVER_TYPE>{SFM_SOLVER_TYPE::ORTHO_EULER_HORIZONTAL_VERTICAL, SFM_SOLVER_TYPE::ORTHO_EULER_ALL_DOF, SFM_SOLVER_TYPE::ORTHO_QUATERNION});
-    supportedSolvers.push_back(std::vector<SFM_SOLVER_TYPE>{SFM_SOLVER_TYPE::ORTHO_EULER_ALL_DOF, SFM_SOLVER_TYPE::ORTHO_QUATERNION});*/
+    supportedSolvers.push_back(std::vector<SFM_SOLVER_TYPE>{SFM_SOLVER_TYPE::ORTHO_EULER_ALL_DOF, SFM_SOLVER_TYPE::ORTHO_QUATERNION});
+    supportedSolvers.push_back(std::vector<SFM_SOLVER_TYPE>{SFM_SOLVER_TYPE::ORTHO_EULER_HORIZONTAL, SFM_SOLVER_TYPE::ORTHO_EULER_HORIZONTAL_VERTICAL, SFM_SOLVER_TYPE::ORTHO_EULER_ALL_DOF, SFM_SOLVER_TYPE::ORTHO_QUATERNION});
+    supportedSolvers.push_back(std::vector<SFM_SOLVER_TYPE>{SFM_SOLVER_TYPE::ORTHO_EULER_HORIZONTAL_VERTICAL, SFM_SOLVER_TYPE::ORTHO_EULER_ALL_DOF, SFM_SOLVER_TYPE::ORTHO_QUATERNION});
+    supportedSolvers.push_back(std::vector<SFM_SOLVER_TYPE>{SFM_SOLVER_TYPE::ORTHO_EULER_ALL_DOF, SFM_SOLVER_TYPE::ORTHO_QUATERNION});
 
     // Real datasets
-    supportedSolvers.push_back(std::vector<SFM_SOLVER_TYPE>{SFM_SOLVER_TYPE::ORTHO_EULER_HORIZONTAL, SFM_SOLVER_TYPE::ORTHO_EULER_HORIZONTAL_VERTICAL, SFM_SOLVER_TYPE::ORTHO_EULER_ALL_DOF, SFM_SOLVER_TYPE::ORTHO_QUATERNION});
-    supportedSolvers.push_back(std::vector<SFM_SOLVER_TYPE>{SFM_SOLVER_TYPE::ORTHO_EULER_HORIZONTAL, SFM_SOLVER_TYPE::ORTHO_EULER_HORIZONTAL_VERTICAL, SFM_SOLVER_TYPE::ORTHO_EULER_ALL_DOF, SFM_SOLVER_TYPE::ORTHO_QUATERNION});
+    //supportedSolvers.push_back(std::vector<SFM_SOLVER_TYPE>{SFM_SOLVER_TYPE::ORTHO_EULER_HORIZONTAL, SFM_SOLVER_TYPE::ORTHO_EULER_HORIZONTAL_VERTICAL, SFM_SOLVER_TYPE::ORTHO_EULER_ALL_DOF, SFM_SOLVER_TYPE::ORTHO_QUATERNION});
+    //supportedSolvers.push_back(std::vector<SFM_SOLVER_TYPE>{SFM_SOLVER_TYPE::ORTHO_EULER_HORIZONTAL, SFM_SOLVER_TYPE::ORTHO_EULER_HORIZONTAL_VERTICAL, SFM_SOLVER_TYPE::ORTHO_EULER_ALL_DOF, SFM_SOLVER_TYPE::ORTHO_QUATERNION});
 
 
     // Check if the datasets exist
