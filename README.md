@@ -5,7 +5,7 @@ Official implementation of **A Structure from Motion Pipeline for Orthographic M
 ![alt text](resources/header.png "Logo Title Text 1")
 
 ## Installation
-A prebuilt version for windows can be found here: **LINK** 
+A prebuilt version for windows can be found here: [Link](https://github.com/Voleuro/OrthoSfM/releases)
 
 For building, the software requires the following third party libaries to be present:
 - Ceres (**required**)
